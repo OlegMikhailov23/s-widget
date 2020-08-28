@@ -1,0 +1,70 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+@font-face {
+  font-weight: 300;
+  font-family: 'Montserrat';
+  font-style: normal;
+  src: url("../fonts/light.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Montserrat';
+  font-style: normal;
+  src: url('../fonts/regular.ttf');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Montserrat';
+  font-style: normal;
+  src: url('../fonts/bold.ttf');
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: 'Montserrat';
+  font-style: normal;
+  src: url('../fonts/extrabold.ttf');
+}
+
+.body-wrapper {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: $body-bg;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  color: $main-font-color;
+}
+
+.preload {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+     opacity:0;
+}
+.visible {
+     opacity:1;
+}
+

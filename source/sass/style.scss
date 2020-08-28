@@ -1,0 +1,144 @@
+/**
+ * S-Widget - v1.0.0 - 2020-08-28
+ * https://github.com/OlegMikhailov23/s-widget
+ *
+ * Copyright (c) 2020 Oleg Mikhailov
+ * Licensed Apache License 2.0 <https://github.com/OlegMikhailov23/s-widget/LICENSE>
+ */
+
+@import "variables";
+@import "mixin";
+@import "blocks/modal";
+
+.main-button {
+  position: fixed;
+  right: 6%;
+  bottom: 3%;
+
+  background-color: #00bdb5;
+
+  font-size: 0;
+  outline: none !important;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../img/phone.svg");
+  background-position: center;
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.main-button--close {
+  transform: rotate(180deg);
+  background-color: #858888;
+  background-image: url("../img/cross.svg") !important;
+}
+
+.widget-tools {
+  transition: all 0.3s ease-out;
+  opacity: 0;
+}
+
+.widget-tools--show {
+  opacity: 1;
+}
+
+.tool-button {
+  position: fixed;
+  right: 6%;
+  bottom: 3%;
+
+  height: 60px;
+  width: 60px;
+
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  outline: none !important;
+  background-color: #00bdb5;
+  background-position: center;
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  z-index: 1;
+  &:active {
+    box-shadow: inset  0px 2px 3px 0px rgba(0, 0, 0, 0.7);
+  }
+  &:hover {
+    background-color: #81b3b2;
+  }
+}
+
+.tool-button-whatsapp {
+  bottom: 18%;
+  background-image: url("../img/whatsapp.svg");
+}
+
+.tool-button-recall {
+  bottom: 30%;
+  background-image: url("../img/phone.svg")
+}
+
+.tool-button-feedback {
+  bottom: 42%;
+  background-image: url("../img/survey.svg")
+}
+
+.tool-button-inst {
+  bottom: 54%;
+  background-image: url("../img/instagram.svg");
+  background-color: #ec6433;
+}
+
+.tool-button-vk {
+  bottom: 66%;
+  background-color: #5181b8;
+  background-image: url("../img/vk.svg")
+}
+
+@media ($tablet-widths) {
+  .tool-button-whatsapp {
+    bottom: 18%;
+  }
+
+  .tool-button-recall {
+    bottom: 30%;
+  }
+
+  .tool-button-feedback {
+    bottom: 42%;
+  }
+
+  .widget-tools .tool-button-inst {
+    bottom: 54%;
+  }
+
+  .tool-button-vk {
+    bottom: 66%;
+  }
+}
+
+.modal-bg {
+  opacity: 0;
+  position: fixed;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-out;
+}
+
+.modal-bg--show {
+  opacity: 1;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}

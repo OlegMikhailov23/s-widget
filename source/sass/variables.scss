@@ -1,0 +1,82 @@
+
+$tablet-widths: "min-width: 768px";
+$desktop-widths: "min-width: 1140px";
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
+//--- Font-size...
+
+$main-font-size: 14px;
+
+$main-line-height: 20px;
+
+//--- Font-colors...
+
+$main-font-color: #2d2d2d;
+
+$second-font-color: #ffffff;
+
+$third-font-color: rgba(255, 255, 255, 0.4);
+
+$btn-font-color: #d4d5c7;
+
+$h1-color: #ffffff;
+
+$h2-color: #d15030;
+
+$h3-color: #d15030;
+
+$h4-color: #000000;
+
+$article-color: #000000;
+
+$hover-font-color: #d15030;
+
+$active-font-color: #000000;
+
+//--- Btn-colors...
+
+$btn-bg-hover-color: #cb6248;
+
+$btn-bg-active-color: #000000;
+
+$btn-bg: #ffe13e;
+
+$submit-btn-bg: #ffe13e;
+
+//--- Main-backgrounds...
+
+$body-bg: #ececec;
+
+$background-colr-1: #81b3b2;
+
+$background-colr-2: #e7ebfc;
+
+$background-colr-3: #ffffff;
+
+$btn-background-color: #d15030;
+
+//--- Border colors...
+
+$main-border-color: #2d2d2d;
+
+
+@-webkit-keyframes pulse
+{
+  0%
+  {
+    -webkit-box-shadow: 0 0 0 0 rgba(85, 171, 110, .4);
+    box-shadow: 0 0 0 0 rgba(85, 171, 110, .4);
+  }
+  70%
+  {
+    -webkit-box-shadow: 0 0 0 35px rgba(85, 171, 110, 0);
+    box-shadow: 0 0 0 35px rgba(85, 171, 110, 0);
+  }
+  100%
+  {
+    -webkit-box-shadow: 0 0 0 0 rgba(85, 171, 110, 0);
+    box-shadow: 0 0 0 0 rgba(85, 171, 110, 0);
+  }
+}
+
+
+
